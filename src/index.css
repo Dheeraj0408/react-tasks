@@ -5,7 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  background-color: rgb(213, 60, 60); 
+} 
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -19,4 +25,43 @@ table,tr,td,th{
 }
 h1{
   text-align: center;
+}
+.form-component{
+  border: 3px solid black;
+  padding: 80px;
+  border-radius: 15px;
+background-color: beige;
+}
+form{
+  border: 2px solid brown;
+  padding: 15px;
+  border-radius: 13px;
+  background-color: bisque;
+  
+}
+input{
+  padding: 15px 40px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+input[type="submit"]{
+  width: 15rem;
+  color: red;
+  background-color: aqua;
+  border: none;
+  font-size: larger;
+  
+}
+input[type="submit"]:hover{
+  cursor: pointer;
+}
+input[type="submit"]:focus{
+ outline: none ;
+}
+input::placeholder{
+  font-size: medium;
+}
+input:focus{
+  outline:3px solid blueviolet;
 }
