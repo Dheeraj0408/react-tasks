@@ -1,10 +1,11 @@
-import Profile from "./components/functional-components/jsx/jsx";
+import ProductsTable from "./components/functional-components/jsx/Products-Data";
+
 
 function App() {
   return (
-    <div id="root">
-    <Profile></Profile>
-    </div>
+   <div>
+   <ProductsTable/>
+   </div>
   );
 }
 
