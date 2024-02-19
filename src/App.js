@@ -1,12 +1,10 @@
-import FancyText from "./components/functional-components/text/fancytext";
 import "./App.css";
-import Content from "./components/functional-components/styles/bootstrap/content";
+import Spinner from "./components/functional-components/styles/bootstrap/spinner/spinner";
 
 function App() {
   return (
     <div>
-    <FancyText></FancyText>
-    <Content></Content>
+    <Spinner/>
     </div>
   );
 }
