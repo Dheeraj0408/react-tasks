@@ -1,10 +1,12 @@
-import Profile from "./components/functional-components/jsx/jsx";
-import Details from "./components/functional-components/props/General-prop";
+import FancyText from "./components/functional-components/text/fancytext";
+import "./App.css";
+import Content from "./components/functional-components/styles/bootstrap/content";
 
 function App() {
   return (
-    <div id="root">
-    <Details></Details>
+    <div>
+    <FancyText></FancyText>
+    <Content></Content>
     </div>
   );
 }
