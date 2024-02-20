@@ -1,10 +1,10 @@
 import "./App.css";
-import Spinner from "./components/functional-components/styles/bootstrap/spinner/spinner";
+import ArrayMethods from "./javascript/arraymethods";
 
 function App() {
   return (
     <div>
-    <Spinner/>
+      <ArrayMethods />
     </div>
   );
 }
