@@ -1,4 +1,22 @@
 const ArrayMethods=()=>{
+    const arr=[]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     return (
         <div>
             <ul>
