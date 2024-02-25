@@ -7,12 +7,11 @@ import Products from "./components/class-components/products/products";
 function App() {
   return (
     <div>
-      {/* <ImageComponent name="Dheeraj"/>
+      <ImageComponent name="Dheeraj"/>
       <br/>
       <YoutubeButton/>
       <br/>
-      <Products/> */}
-      {/* <FilterData/> */}
+      <Products/>
     </div>
   );
 }
