@@ -1,13 +1,10 @@
 import "./App.css";
-import FilterData from "./components/class-components/filterData/filterData";
-
+import ProductsData from "./components/class-components/products/Products1";
 
 function App() {
-  return (
-    <div>
-      <FilterData/>
-    </div>
-  );
+  return <div>
+    <ProductsData/>
+  </div>;
 }
 
 export default App;
