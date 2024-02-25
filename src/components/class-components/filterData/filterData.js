@@ -22,11 +22,28 @@ class FilterData extends Component {
         { name: "Sophia", designation: "Node", salary: "26000" },
         { name: "Ethan", designation: "Node", salary: "25500" },
       ],
+      FilteredData:[
+        { name: "Dheeraj", designation: "React", salary: "30000" },
+        { name: "Sadhiq", designation: "Angular", salary: "25000" },
+        { name: "Sachin", designation: "Node", salary: "25500" },
+        { name: "John", designation: "React", salary: "32000" },
+        { name: "Emily", designation: "React", salary: "31000" },
+        { name: "Michael", designation: "React", salary: "30000" },
+        { name: "David", designation: "React", salary: "30500" },
+        { name: "Sarah", designation: "React", salary: "33000" },
+        { name: "Daniel", designation: "React", salary: "29500" },
+        { name: "Jessica", designation: "Angular", salary: "28000" },
+        { name: "Ryan", designation: "Angular", salary: "27000" },
+        { name: "Olivia", designation: "Angular", salary: "26500" },
+        { name: "William", designation: "Angular", salary: "28500" },
+        { name: "Sophia", designation: "Node", salary: "26000" },
+        { name: "Ethan", designation: "Node", salary: "25500" },
+      ]
     };
   }
   filterAngular = () => {
     // this.setState({data:this.state.data});
-    let result = this.state.data.filter((eachObject) => {
+    let result = this.state.FilteredData.filter((eachObject) => {
       return eachObject.designation === "Angular";
     });
     this.setState({ data: result }, () => {
@@ -34,7 +51,7 @@ class FilterData extends Component {
     });
   };
   filterReact = () => {
-    let result = this.state.data.filter((eachObject) => {
+    let result = this.state.FilteredData.filter((eachObject) => {
       return eachObject.designation === "React";
     });
     this.setState({ data: result }, () => {
@@ -42,7 +59,7 @@ class FilterData extends Component {
     });
   };
   filterNode = () => {
-    let result = this.state.data.filter((eachObject) => {
+    let result = this.state.FilteredData.filter((eachObject) => {
       return eachObject.designation === "Node";
     });
     this.setState({ data: result }, () => {
