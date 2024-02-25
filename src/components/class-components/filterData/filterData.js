@@ -1,4 +1,5 @@
-import "./filterData.module.css";
+import { CardGroup } from "react-bootstrap";
+import styles from "./filterData.module.css";
 const { Component } = require("react");
 
 class FilterData extends Component {
@@ -22,11 +23,28 @@ class FilterData extends Component {
         { name: "Sophia", designation: "Node", salary: "26000" },
         { name: "Ethan", designation: "Node", salary: "25500" },
       ],
+      filteredData:[
+        { name: "Dheeraj", designation: "React", salary: "30000" },
+        { name: "Sadhiq", designation: "Angular", salary: "25000" },
+        { name: "Sachin", designation: "Node", salary: "25500" },
+        { name: "John", designation: "React", salary: "32000" },
+        { name: "Emily", designation: "React", salary: "31000" },
+        { name: "Michael", designation: "React", salary: "30000" },
+        { name: "David", designation: "React", salary: "30500" },
+        { name: "Sarah", designation: "React", salary: "33000" },
+        { name: "Daniel", designation: "React", salary: "29500" },
+        { name: "Jessica", designation: "Angular", salary: "28000" },
+        { name: "Ryan", designation: "Angular", salary: "27000" },
+        { name: "Olivia", designation: "Angular", salary: "26500" },
+        { name: "William", designation: "Angular", salary: "28500" },
+        { name: "Sophia", designation: "Node", salary: "26000" },
+        { name: "Ethan", designation: "Node", salary: "25500" },
+      ]
     };
   }
   filterAngular = () => {
     // this.setState({data:this.state.data});
-    let result = this.state.data.filter((eachObject) => {
+    let result = this.state.filteredData.filter((eachObject) => {
       return eachObject.designation === "Angular";
     });
     this.setState({ data: result }, () => {
@@ -34,7 +52,7 @@ class FilterData extends Component {
     });
   };
   filterReact = () => {
-    let result = this.state.data.filter((eachObject) => {
+    let result = this.state.filteredData.filter((eachObject) => {
       return eachObject.designation === "React";
     });
     this.setState({ data: result }, () => {
@@ -42,7 +60,7 @@ class FilterData extends Component {
     });
   };
   filterNode = () => {
-    let result = this.state.data.filter((eachObject) => {
+    let result = this.state.filteredData.filter((eachObject) => {
       return eachObject.designation === "Node";
     });
     this.setState({ data: result }, () => {
@@ -52,35 +70,35 @@ class FilterData extends Component {
   render() {
     return (
       <div>
-        <h1 style={{ textAlign: "center" }}>People Data</h1>
+        <h1 className={styles.h1}>People Data</h1>
         <div
-          class="btn-group"
+          className="btn-group"
           role="group"
           aria-label="Basic mixed styles example"
         >
           <button
             type="button"
-            class="btn btn-danger"
+            className="btn btn-danger"
             onClick={this.filterAngular}
           >
             Angular
           </button>
           <button
             type="button"
-            class="btn btn-warning"
+            className="btn btn-warning"
             onClick={this.filterReact}
           >
             React
           </button>
           <button
             type="button"
-            class="btn btn-success"
+            className="btn btn-success"
             onClick={this.filterNode}
           >
             Node
           </button>
         </div>
-        <table class="table table-bordered">
+        <table className="table table-bordered">
           <thead>
             <tr>
               <th scope="col">S.No</th>
