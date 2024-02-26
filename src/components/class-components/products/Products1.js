@@ -167,7 +167,7 @@ class ProductsData extends Component {
           rating: {
             ...product.rating,
             count: product.rating.count - 1,
-          },
+          }
         };
         return newProduct;
       } else {
