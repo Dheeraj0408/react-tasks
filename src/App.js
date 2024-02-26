@@ -1,9 +1,9 @@
 import "./App.css";
-import ProductsData from "./components/class-components/products/Products1";
+import FetchApiData from "./components/class-components/api/fetchApi";
 
 function App() {
   return <div>
-    <ProductsData/>
+   <FetchApiData/>
   </div>;
 }
 
