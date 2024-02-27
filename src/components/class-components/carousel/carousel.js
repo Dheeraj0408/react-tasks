@@ -34,10 +34,10 @@ export function UncontrolledExample({ slides }) {
       {slides.map((slide) => (
         <Carousel.Item key={slide.id}>
           <ExampleCarouselImage text={slide.text} />
-          <Carousel.Caption>
+           <Carousel.Caption>
             <h3>{slide.text}</h3>
             <p>Slide {slide.id}</p>
-          </Carousel.Caption>
+           </Carousel.Caption>
         </Carousel.Item>
       ))}
     </Carousel>
