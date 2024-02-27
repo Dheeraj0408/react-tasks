@@ -1,10 +1,13 @@
 import "./App.css";
-import ProductsData from "./components/class-components/products/Products1";
+import CircleTask from "./components/class-components/UItasks/addCircle";
+
 
 function App() {
-  return <div>
-    <ProductsData/>
-  </div>;
+  return(
+    <>
+    <CircleTask/>
+    </>
+  )
 }
 
 export default App;
