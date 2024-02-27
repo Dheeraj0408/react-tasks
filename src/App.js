@@ -1,9 +1,11 @@
 import "./App.css";
-import ProductsData from "./components/class-components/products/Products1";
+import CarouselTask from "./components/class-components/carousel/carousel";
+// import ProductsData from "./components/class-components/products/Products1";
 
 function App() {
   return <div>
-    <ProductsData/>
+    {/* <ProductsData/> */}
+    <CarouselTask/>
   </div>;
 }
 
