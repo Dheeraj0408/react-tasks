@@ -1,12 +1,16 @@
 import "./App.css";
-import CarouselTask from "./components/class-components/carousel/carousel";
-// import ProductsData from "./components/class-components/products/Products1";
+import TailwindTable from "./components/class-components/table/tailwindTable";
+
+
 
 function App() {
-  return <div>
-    {/* <ProductsData/> */}
-    <CarouselTask/>
-  </div>;
+  return(
+    <>
+    <TailwindTable/>
+    </>
+  )
 }
 
 export default App;
+
+
