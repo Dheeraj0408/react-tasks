@@ -5,8 +5,7 @@ import Uncontrolled from "./components/functional-components/forms/uncontrolled"
 
 function App() {
   return <>
-    {/* <Uncontrolled/> */}
-    <Controlled/>
+   
   </>;
 }
 
