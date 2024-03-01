@@ -1,9 +1,12 @@
 import "./App.css";
-import EmployeeData from "./components/functional-components/employees/employee";
+import Controlled from "./components/functional-components/forms/controlled";
+import Uncontrolled from "./components/functional-components/forms/uncontrolled";
+
 
 function App() {
   return <>
-  <EmployeeData/>
+    {/* <Uncontrolled/> */}
+    <Controlled/>
   </>;
 }
 
