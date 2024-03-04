@@ -4,6 +4,7 @@ import UseEffectExample from "./components/functional-components/hooks/useeffect
 import UseEffectExample2 from "./components/functional-components/hooks/useeffectexp2";
 import UseEffectExample3 from "./components/functional-components/hooks/useeffectexp3";
 import UseEffectExample4 from "./components/functional-components/hooks/useeffectexp4";
+import ChangeProducts from "./components/functional-components/hooks/useeffectexpSadhiq";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <UseEffectExample2/> */}
         {/* <UseEffectExample3/> */}
         {/* <UseEffectExample4/> */}
-        <UseEffectTask/>
+        {/* <UseEffectTask/> */}
+        <ChangeProducts/>
       </div>
     </>
   );
