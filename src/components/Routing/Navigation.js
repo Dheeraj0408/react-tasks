@@ -7,7 +7,7 @@ const NavigationStack=()=>{
         <>
        <BrowserRouter>
       {
-        false?<PostRouting/>:<PreRouting/>
+        true?<PostRouting/>:<PreRouting/>
       }
        </BrowserRouter>
         </>
