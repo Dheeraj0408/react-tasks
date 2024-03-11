@@ -1,6 +1,6 @@
 import Header1 from "../Navbar/header1";
-import UseReducerTask from "../functional-components/useReducer/CRUD-useReducer";
-import UseReducerExample from "../functional-components/useReducer/useReducerExample";
+import UseReducerTask from "../functional-components/hooks/useReducer/CRUD-useReducer";
+import UseReducerExample from "../functional-components/hooks/useReducer/useReducerExample";
 
 const ProfilePage=()=>{
     return(
