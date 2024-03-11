@@ -1,4 +1,5 @@
 import Header1 from "../Navbar/header1";
+import UseReducerTask from "../functional-components/useReducer/CRUD-useReducer";
 import UseReducerExample from "../functional-components/useReducer/useReducerExample";
 
 const ProfilePage=()=>{
@@ -6,7 +7,8 @@ const ProfilePage=()=>{
         <>
         <Header1/>
         <h1>Profile Page</h1>
-        <UseReducerExample/>
+        {/* <UseReducerExample/> */}
+        <UseReducerTask/>
         </>
     )
 }
