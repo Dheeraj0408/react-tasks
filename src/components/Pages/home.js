@@ -18,19 +18,18 @@ const HomePage = () => {
     <>
       <Header1 />
       {
-        data.length>0?data.map((eachProduct)=>{
-          return(<>
-          <CustomCard product={eachProduct}/></>)
-        })
-}
-      
+        data.length>0&&data.map((eachProduct)=>{
+          return(
+          <CustomCard product={eachProduct} key={eachProduct.id}/>
+          )
+        })}  
     </>
-  );
-};
+  )
+}
 export default HomePage;
 
-export function CustomCard({data}) {
-  const {id,title,description,image,price}=data
+function CustomCard({product}) {
+  const {id,title,description,image,price}=product;
   return (
     <>
     <Card style={{ width: '18rem' }}>
