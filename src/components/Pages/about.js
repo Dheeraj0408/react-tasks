@@ -8,20 +8,23 @@ import UseMemoExample3 from "../functional-components/hooks/useMemo/useMemoExp3"
 import UseMemoExample4 from "../functional-components/hooks/useMemo/useMemoExp4";
 
 const AboutPage = () => {
- const[data]=useAxios("http://fakestoreapi.com/products/categories");
+  const [data] = useAxios("http://fakestoreapi.com/products/categories");
   console.log(data);
- 
+
   return (
     <>
       <Header1 />
       <h1>About Page</h1>
 
-
-      {/* <UseMemoExample1 list={['Dheeraj','Sadhiq','Harini','Bramha']} filter={'j'} utidhe={'k'}/>
-      <UseMemoExample2 list={[345,30,7,234]}/>
-      <UseMemoExample3 a={20} b={5}/>
-      <UseMemoExample4 id={4}/>
-      <CardFlip/> */}
+      <UseMemoExample1
+        list={["Dheeraj", "Sadhiq", "Harini", "Bramha"]}
+        filter={"j"}
+        utidhe={"k"}
+      />
+      <UseMemoExample2 list={[345, 30, 7, 234]} />
+      <UseMemoExample3 a={20} b={5} />
+      <UseMemoExample4 id={4} />
+      <CardFlip />
     </>
   );
 };
