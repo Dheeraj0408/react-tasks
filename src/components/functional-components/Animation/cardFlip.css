@@ -1,4 +1,4 @@
-.card{
+#card-container .card{
     margin: auto;
     width: 250px;
     height:300px;
@@ -8,9 +8,9 @@
     justify-content: center;
     align-items: center;
 }
-.card-front{
+#card-container .card-front{
     background-color: aliceblue;
 }
-.card-back{
+#card-container .card-back{
     background-color: antiquewhite;
 }

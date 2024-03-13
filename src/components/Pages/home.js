@@ -3,17 +3,20 @@ import Header1 from "../Navbar/header1";
 import axios from "axios";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import useAxios from "../functional-components/customHooks/useAxios";
+import { BASE_PROD_URL, endPoints } from "../../endpoints/endpoints";
 
 
 const HomePage = () => {
-  const[data,setData]=useState([]);
-  useEffect(() => {
-    axios.get("https://fakestoreapi.com/products").then((response) => {
-      if (response.status === 200) {
-        setData(response.data);
-      }
-    }).catch(err=>console.log(err));
-  }, []);
+  // const[data,setData]=useState([]);
+  const[data]=(useAxios(`${BASE_PROD_URL}${endPoints.products}`))
+  // useEffect(() => {
+  //   axios.get("https://fakestoreapi.com/products").then((response) => {
+  //     if (response.status === 200) {
+  //       setData(response.data);
+  //     }
+  //   }).catch(err=>console.log(err));
+  // }, []);
   return (
     <>
       <Header1 />

@@ -7,7 +7,7 @@ const CardFlip = () => {
     setIsFlipped(!isFlipped);
   }
   return (
-    <>
+    <div id="card-container">
       <ReactCardFlip flipDirection="horizontal" isFlipped={isFlipped}>
         <div className="card card-front" onClick={flipCard} >
           <h4>Front</h4>
@@ -16,7 +16,7 @@ const CardFlip = () => {
           <h4>Back</h4>
         </div>
       </ReactCardFlip>
-    </>
+    </div>
   );
 };
 export default CardFlip;
