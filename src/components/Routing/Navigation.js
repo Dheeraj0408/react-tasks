@@ -14,7 +14,7 @@ const NavigationStack = () => {
     <>
       <BrowserRouter>
         <AuthContext.Provider value={values}>
-          {login ? <PostRouting /> : <PreRouting />}
+          {true ? <PostRouting /> : <PreRouting />}
         </AuthContext.Provider>
       </BrowserRouter>
     </>
