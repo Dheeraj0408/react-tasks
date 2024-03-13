@@ -6,8 +6,13 @@ function Header1() {
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
           <ul class="navbar-nav">
+          <li class="nav-item">
+              <Link to="/" className="nav-link active">
+                Home
+              </Link>
+            </li>
             <li class="nav-item">
-              <Link to="/setting" className="nav-link active">
+              <Link to="/setting" className="nav-link">
                 Setting
               </Link>
             </li>

@@ -1,0 +1,25 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px 50px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.custom-cards button {
+  border: none;
+}
+.custom-cards button:hover {
+  border: 3px solid grey;
+}
+.custom-cards{
+    width: 18rem;
+}
+
+.card-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
