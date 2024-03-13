@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import Header1 from "../Navbar/header1";
 import axios from "axios";
-<<<<<<< HEAD
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import useAxios from "../functional-components/customHooks/useAxios";
 import { BASE_PROD_URL, endPoints } from "../../endpoints/endpoints";
+import CustomSpinner from "../functional-components/Spinners/spinner1";
+import { Link } from "react-router-dom";
 
 
 const HomePage = () => {
@@ -18,27 +19,6 @@ const HomePage = () => {
   //     }
   //   }).catch(err=>console.log(err));
   // }, []);
-=======
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import CustomSpinner from "../functional-components/Spinners/spinner1";
-import { Link } from "react-router-dom";
-import "./homescreen.css"
-
-const HomePage = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios
-      .get("https://fakestoreapi.com/products")
-      .then((response) => {
-        if (response.status === 200) {
-          console.log(response);
-          setData(response.data);
-        }
-      })
-      .catch((err) => console.log(err));
-  }, []);
->>>>>>> 255d786cad62e7a610654cfe00265a51a1d0e15e
   return (
     <>
       <Header1 />
